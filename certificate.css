@@ -1,0 +1,78 @@
+/* Search Bar Styling */
+#searchBar {
+    width: 30%;
+    height: 4vh;
+    padding-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#searchBar::placeholder {
+    color: #666;
+}
+
+#searchBar:hover,
+#searchBar:focus {
+    background-color: #0f0529;
+    color: white;
+    border: 2px solid #7338a0;
+    outline: none;
+}
+
+/* Certificates Section */
+.certificates-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.certificate-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.certificate-item p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Verification Button */
+.verify-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #7338a0;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.verify-btn:hover {
+    background-color: #511973;
+}

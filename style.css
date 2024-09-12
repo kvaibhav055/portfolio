@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2b1a4b;
+    line-height: 1.5;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #1c1235;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.name-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#searchBar {
+    width: 28%;
+    height: 4vh;
+    padding-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: none;
+    color: #2c1f47;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#searchBar::placeholder {
+    color: #555;
+}
+
+#searchBar:hover,
+#searchBar:focus {
+    background-color: #0d0128;
+    color: #ffffff;
+    border: 2px solid #703798;
+    outline: none;
+}
+
+.header-anchors {
+    margin-left: 2rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: border-bottom 0.3s ease;
+}
+
+.header-anchors:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Main Body */
+.actual-body {
+    margin-top: 10vh;
+    padding: 2rem;
+}
+
+.margin-class {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.margin-class:hover {
+    transform: translateY(-5px);
+}
+
+.heading-css {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.summary-section,
+.technical-skills,
+.Competitive-programming-profiles,
+.projects-section-main,
+.qualification {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.summary-section:hover,
+.technical-skills:hover,
+.Competitive-programming-profiles:hover,
+.projects-section-main:hover,
+.qualification:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+.technical-skills ul li,
+.projects-section-main ol li {
+    margin-bottom: 0.5rem;
+}
+
+.Competitive-programming-profiles a {
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 0.4rem 0.8rem;
+    background-color: #703798;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.Competitive-programming-profiles a:hover {
+    background-color: #511269;
+}
+
+.college-info {
+    font-size: 1.2rem;
+    font-weight: medium;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    /* color: #000000; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1c1235;
+    margin-top: 4rem;
+}
+
+.footer-container p {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.search-message {
+    color: #ff0000;
+    font-size: 1rem;
+    margin-top: 1rem;
+}

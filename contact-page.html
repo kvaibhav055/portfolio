@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Vaibhav Sharma</title>
+    <link rel="stylesheet" href="contact-me.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="name-logo">Vaibhav Sharma</a>
+        <nav>
+            <a href="index.html" class="header-anchors">Home</a>
+            <a href="about-me.html" class="header-anchors">About Me</a>
+            <a href="contact.html" class="header-anchors">Contact Me</a>
+            <a href="index.html#projects-section-main" class="header-anchors">Projects</a>
+            <a href="certificates.html" class="header-anchors">Verify Certificates</a>
+        </nav>
+        <input type="text" name="searchBar" id="searchBar" placeholder="Search about me">
+    </header>    
+    
+    <main class="actual-body">
+        <section class="contact-section margin-class">
+            <h3 class="heading-css">Get in Touch</h3>
+            <p>If you have any questions, feel free to reach out. I would love to hear from you!</p>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <p>Created with ♥ by Vaibhav Sharma</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
