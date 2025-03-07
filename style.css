@@ -179,8 +179,9 @@ ul, ol {
 .download-btn{
     background-color: #52a447;
     color: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 1.5rem;
     font-weight: bold;
+    padding: 0.4rem 0.8rem;
 }
 
