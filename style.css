@@ -172,12 +172,12 @@ ul, ol {
 }
 
 .resume-download-section{
-    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    .download-btn{
-        background-color: #90EE90;
-        color: #FFFFFF;
-    }
 }
+.download-btn{
+    background-color: #90EE90;
+    color: #FFFFFF;
+}
+
