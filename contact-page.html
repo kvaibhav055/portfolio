@@ -44,4 +44,27 @@
     </footer>
 </body>
 <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("EdDd_eMFr8T9OQBu0"); // Replace with your EmailJS user ID
+    })();
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        const serviceID = "service_ka8gbxl"; // Replace with your EmailJS service ID
+        const templateID = "service_ka8gbxl"; // Replace with your EmailJS template ID
+
+        emailjs.sendForm(serviceID, templateID, e.target)
+            .then(() => {
+                alert("Message sent successfully!");
+            }, (error) => {
+                alert("Oops! Something went wrong.");
+                console.error(error);
+            });
+    }
+
+    document.getElementById("connectForm").addEventListener("submit", sendEmail);
+</script>
 </html>
