@@ -177,7 +177,10 @@ ul, ol {
     align-items: center;
 }
 .download-btn{
-    background-color: #90EE90;
+    background-color: #52a447;
     color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
