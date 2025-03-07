@@ -24,7 +24,7 @@
         <section class="contact-section margin-class">
             <h3 class="heading-css">Get in Touch</h3>
             <p>If you have any questions, feel free to reach out. I would love to hear from you!</p>
-            <form action="submit_form.php" method="post" class="contact-form">
+            <form id="connectForm" class="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -33,7 +33,7 @@
                 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-                
+                <input type="hidden" name="from_name" value="Website Visitor">
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </section>
