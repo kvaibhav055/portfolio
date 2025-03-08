@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Resume download functionality
     function downloadRESUME() {
         const link = document.createElement('a');
-        link.href = '';  // Replace with your PDF file path
+        link.href = 'https://drive.google.com/file/d/1hN3PdvMzuEg54XZLAd9e7nII3aedXw7z/view?usp=drive_link';  // Replace with your PDF file path
         link.download = 'MyResume.pdf';  // Name of the downloaded file
         document.body.appendChild(link);
         link.click();
