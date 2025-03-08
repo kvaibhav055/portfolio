@@ -207,6 +207,9 @@ ul, ol {
     #project-header-anchor{
         display: none;
     }
+    #home-header-anchor{
+        display:none;
+    }
 }
 @media (max-width: 950px){
     #searchBar{
