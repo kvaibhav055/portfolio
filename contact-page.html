@@ -8,20 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="name-logo">Vaibhav Sharma</a>
-        <button class="menu-toggle" aria-label="Open menu">
-            &#9776; <!-- Hamburger icon -->
-        </button>
-        <nav class="nav-links">
-            <a href="index.html" class="header-anchors">Home</a>
-            <a href="about-me.html" class="header-anchors">About Me</a>
-            <a href="contact-page.html" class="header-anchors">Contact Me</a>
-            <a href="#projects-section" id = "project-header-anchor" class="header-anchors">Projects</a>
-            <a href="certificates.html" id = "certificate-header-anchor" class="header-anchors">Verify Certificates</a>
-        </nav>
-        <input type="text" name="searchBar" id="searchBar" placeholder="Search about me">
-    </header>    
+    <header></header>    
     
     <main class="actual-body">
         <section class="contact-section margin-class">
@@ -70,4 +57,6 @@
 
     document.getElementById("connectForm").addEventListener("submit", sendEmail);
 </script>
+<!--     load header  -->
+    <script src="loadHeader.js"></script>
 </html>
