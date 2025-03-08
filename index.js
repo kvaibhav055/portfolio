@@ -46,19 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Resume download functionality
     function downloadRESUME() {
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/1hN3PdvMzuEg54XZLAd9e7nII3aedXw7z/view?usp=drive_link';  // Replace with your PDF file path
-        link.download = 'VaibhavResume.pdf';  // Name of the downloaded file
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/file/d/1hN3PdvMzuEg54XZLAd9e7nII3aedXw7z/view?usp=drive_link';  // Replace with the correct path to your PDF file
+    link.download = 'VaibhavResume.pdf';  // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
-//     // Example: Add an event listener to a button for resume download
-//     const resumeButton = document.getElementById('resumeButton'); // Add this ID to your resume button
-//     if (resumeButton) {
-//         resumeButton.addEventListener('click', downloadRESUME);
-//     }
-// });
+const resumeButton = document.getElementById('resumeButton');
+if (resumeButton) {
+    resumeButton.addEventListener('click', downloadRESUME);
+}
