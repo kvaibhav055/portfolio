@@ -263,4 +263,7 @@ ul, ol {
     .menu-toggle {
         display: block;
     }
+    .margin-class{
+        font-size: 0.5rem;
+    }
 }
