@@ -188,6 +188,7 @@ ul, ol {
     font-weight: bold;
     padding: 0.2rem 0.4rem; */
     font-weight: bold;
+    font-size: 1.2rem;
     display: inline-block;
     margin: 0.5rem 0;
     padding: 0.4rem 0.8rem;
@@ -269,5 +270,8 @@ ul, ol {
     .actual-body {
         margin-top: 6vh;
         padding: 0.5rem;
+    }
+    .college-info{
+        font-size: 0.7rem;
     }
 }
