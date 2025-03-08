@@ -85,7 +85,8 @@ body {
 }
 
 .margin-class {
-    margin-bottom: 2rem;
+    argin-bottom: 1rem;
+    margin-top: 1rem;
     padding: 2rem;
     font-size: 1.1rem;
     background-color: rgba(255, 255, 255, 0.1);
@@ -112,7 +113,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2rem;
     border-radius: 12px;
-    margin-bottom: 2rem;
+/*     margin-bottom: 2rem; */
     transition: box-shadow 0.3s ease;
 }
 
