@@ -39,6 +39,9 @@ body {
     font-weight: bold;
     color: #ffffff;
 }
+.name-logo:hover{
+    color: #2b1a4b;
+}
 
 #searchBar {
     width: 28%;
@@ -201,14 +204,16 @@ ul, ol {
 }
 
 @media (max-width: 1300px){
-    .nav-links {
-        font-size: 0.7rem;
-    }
-/*     #searchBar {
+    #project-header-anchor{
         display: none;
-    } */
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 950px){
+    #searchBar{
+        display:none;
+    }
+}
+@media (max-width: 800px) {
     /* Hide the navigation links and search bar */
     .nav-links {
         display: none;
