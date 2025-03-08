@@ -182,7 +182,7 @@ ul, ol {
 .download-btn{
     background-color: #52a447;
     color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0.2rem 0.4rem;
@@ -203,7 +203,7 @@ ul, ol {
     cursor: pointer;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1320px){
     #project-header-anchor{
         display: none;
     }
