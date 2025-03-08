@@ -35,6 +35,9 @@
 .contact-form textarea:focus {
     border-color: #703798;
     outline: none;
+    background-color: #0d0128;
+    color: #ffffff;
+    border: 2px solid #703798;
 }
 
 .submit-btn {
