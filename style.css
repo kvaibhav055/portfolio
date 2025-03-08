@@ -185,3 +185,54 @@ ul, ol {
     padding: 0.2rem 0.4rem;
 }
 
+
+
+
+/*mobile screen css*/
+
+/* Hide the menu toggle button by default */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Hide the navigation links and search bar */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 8vh; /* Below the header */
+        left: 0;
+        width: 100%;
+        background-color: #1c1235;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the navigation links when the menu is open */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Style the navigation links for mobile */
+    .header-anchors {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    /* Hide the search bar on mobile */
+    #searchBar {
+        display: none;
+    }
+
+    /* Show the menu toggle button */
+    .menu-toggle {
+        display: block;
+    }
+}
