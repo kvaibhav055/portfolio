@@ -211,7 +211,7 @@ ul, ol {
         display:none;
     }
 }
-@media (max-width: 950px){
+@media (max-width: 1060px){
     #searchBar{
         display:none;
     }
