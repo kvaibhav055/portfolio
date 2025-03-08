@@ -200,6 +200,14 @@ ul, ol {
     cursor: pointer;
 }
 
+@media (max-width: 1300px){
+    .nav-links {
+        font-size: 0.7rem;
+    }
+/*     #searchBar {
+        display: none;
+    } */
+}
 @media (max-width: 768px) {
     /* Hide the navigation links and search bar */
     .nav-links {
