@@ -37,22 +37,42 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script>
     (function() {
-        emailjs.init("EdDd_eMFr8T9OQBu0"); // Replace with your EmailJS user ID
+        emailjs.init("EdDd_eMFr8T9OQBu0"); // Replace with your EmailJS User ID
     })();
 
     function sendEmail(e) {
         e.preventDefault();
 
-        const serviceID = "service_ka8gbxl"; // Replace with your EmailJS service ID
-        const templateID = "template_ficlb2s"; // Replace with your EmailJS template ID
+        const serviceID = "service_ka8gbxl"; // Replace with your EmailJS Service ID
+        const templateID = "template_ficlb2s"; // Replace with your original Template ID
+        const autoReplyTemplateID = "template_upnvy1x"; // Replace with your Auto-Reply Template ID
 
+        // Send the form submission to your email
         emailjs.sendForm(serviceID, templateID, e.target)
             .then(() => {
-                alert("Message sent successfully!");
+                console.log("Form submission sent to your email!");
             }, (error) => {
-                alert("Oops! Something went wrong.");
-                console.error(error);
+                console.error("Error sending form submission:", error);
             });
+
+        // Send an auto-reply to the user
+        const formData = new FormData(e.target);
+        const userEmail = formData.get("email");
+        const userName = formData.get("name");
+        const userMessage = formData.get("message");
+
+        emailjs.send(serviceID, autoReplyTemplateID, {
+            to_email: userEmail, // Send to the user's email
+            name: userName,
+            message: userMessage,
+        })
+            .then(() => {
+                console.log("Auto-reply sent to the user!");
+            }, (error) => {
+                console.error("Error sending auto-reply:", error);
+            });
+
+        alert("Thank you! Your message has been sent.");
     }
 
     document.getElementById("connectForm").addEventListener("submit", sendEmail);
